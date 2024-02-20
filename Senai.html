@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <title>Senai MG</title>
+    <style>
+        .pre{
+            background-image: url("assets/img/pre.png");
+            height: 80px;
+          width: 80px;
+        }
+        .pro{
+          background-image: url("assets/img/pro.png");
+          height: 80px;
+          width: 80px;
+        }
+        header{
+          background-color:#014073; 
+          height: 100%;
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+           
+        }
+        .pjust{
+          text-align: justify;
+
+        }
+        .wt{
+            color: #fff;
+        }
+        .bt{
+            color: #fff;
+            background-color: #014073;
+            border-radius: 40px;
+        }
+        .sect4{
+            color: #fff;
+            background-color: #014073;
+        }
+        #m{
+          margin-right: 0;
+        }
+        .ju{
+          align-items:flex-start;
+          justify-content: center;
+        }
+        .sect7{
+          background-color: #014073;
+        }
+        .pro2{
+          background-image: url("assets/img/pro2.png");
+          height: 80px;
+          width: 80px;
+        }
+        .brd{
+          border-radius: 30px;
+        }
+        footer{
+          text-align: center;
+          background-color: #014073;
+          color: #fff;
+          height: 100%;
+          
+        }
+        .sc::after{
+          background-image: url("assets/img/sb.png");
+        }
+        .sb:not(.collapsed)::after {
+        background-image: url("assets/img/sb.png");
+        transform: var(--bs-accordion-btn-icon-transform);
+        }
+        footer p {
+          margin: 0px;
+        }
+        hr{
+          background-color: #000;
+          border: #000 solid 15px;
+          margin: 0px 0px 0px;
+          opacity: 100;
+        }
+        .img{
+          object-fit: cover
+        }
+        @media screen and (max-width: 850px){
+          .ju{
+            align-items:center;
+          justify-content: center;
+          }   
+          .carousel-item img{
+              height: 400px;
+          }  
+        }            
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <!--Header Inicio-->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="d-flex justify-content-start">
+                    <img src="assets/img/logo4.png" alt="Senai" style="width: 90px; height:20px;"> 
+                </div>                  
+                <div class="d-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav" style="flex-direction: row;">
+                       <a href="#" class="btn wt fs-6 ">Home</a>
+                       <a href="#" class="btn wt fs-6">Sobre</a>
+                       <a href="#" class="btn wt fs-6">Contatos</a>
+                    </ul>
+                </div>
+            </nav>
+          </div>
+       </header>
+    <!--Header Fim-->
+    <!--Main Inicio-->
+    <main>
+        <!--Section1 Inicio-->
+        <section>
+            <div id="carouselExample" class="carousel slide" >
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                        <img src="assets/img/sl1.png" class="d-block w-100" alt="senai1" height="700px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/sl2.jpg" class="d-block w-100" alt="senai2" height="700px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/sl3.png" class="d-block w-100" alt="senai3" height="700px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon pre" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon pro" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!--Section1 Fim-->
+        <!--Section2 Inicio-->
+        <section>
+          <hr>
+            <div>
+                <div class="conteiner text-center py-5">
+                    <div class="row" id="m">
+                        <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-5">
+                            <div style="width: 18rem;">
+                                <img src="assets/img/card1.png" alt="Local1" height="90px" width="90px">
+                            <div class="card-body">
+                                <h5 class="card-title py-2" style="color:#0a66b1 ;">Cursos SENAI</h5>
+                                <a href="#" class="btn bt">Saiba Mais</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-5">  
+                            <div style="width: 18rem;">
+                            <img src="assets/img/card2.png" alt="Local2" height="90px" width="90px">
+                            <div class="card-body">
+                                <h5 class="card-title py-2" style="color:#0a66b1 ;">Fale com a Equipe</h5>
+                                <a href="#" class="btn bt">Saiba Mais</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12 col-sm-12 d-flex justify-content-center py-5">  
+                            <div style="width: 18rem;">
+                            <img src="assets/img/card3.png" alt="Local3" height="90px" width="90px">
+                            <div class="card-body">
+                                <h5 class="card-title py-2" style="color:#0a66b1 ;">Dúvidas Frequentes</h5>
+                                <a href="#" class="btn bt">Saiba Mais</a>
+                            </div>
+                            </div>  
+                        </div> 
+                    </div>      
+                </div>
+            </div>
+        </section>
+        <!--Section2 Fim-->
+        <hr>
+        <!--Section3 Inicio-->
+        <section  class="sect4 py-5">
+            <div>
+                <h1 class="d-flex justify-content-center pt-1 pb-4 fw-bold">Sobre</h1>
+            </div>
+            <div class="conteiner text-center mx-5">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center py-3">
+                        <p class="pjust">O Memorial de Guerra de Hove é um memorial da
+                            Primeira Guerra Mundial projetado por Sir Edwin
+                            Lutyens e localizado na Grand Avenue em Hove,
+                            parte da cidade de Brighton e Hove, na costa sul da
+                            Inglaterra. Hove foi o local de um dos primeiros
+                            eventos de recrutamento no início da guerra e,
+                            posteriormente, de vários hospitais militares. Mais
+                            de 600 homens da cidade foram mortos durante a
+                            guerra, um quarto deles apenas do regimento
+                            local. Um comité do memorial de guerra foi
+                            estabelecido em 1919 e Lutyens foi contratado
+                            como arquiteto. Um projeto foi estabelecido em
+                            1920 após duas propostas mal sucedidas; Lutyens
+                            escolheu o local entre várias opções.</p>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center py-3">  
+                        <p class="pjust">O Memorial de Guerra de Hove é um memorial da
+                            Primeira Guerra Mundial projetado por Sir Edwin
+                            Lutyens e localizado na Grand Avenue em Hove,
+                            parte da cidade de Brighton e Hove, na costa sul da
+                            Inglaterra. Hove foi o local de um dos primeiros
+                            eventos de recrutamento no início da guerra e,
+                            posteriormente, de vários hospitais militares. Mais
+                            de 600 homens da cidade foram mortos durante a
+                            guerra, um quarto deles apenas do regimento
+                            local. Um comité do memorial de guerra foi
+                            estabelecido em 1919 e Lutyens foi contratado
+                            como arquiteto. Um projeto foi estabelecido em
+                            1920 após duas propostas mal sucedidas; Lutyens
+                            escolheu o local entre várias opções.</p>
+                    </div>
+                </div>      
+            </div>
+        </section>
+        <!--Section3 Fim-->
+        <!--Section4 Inicio-->
+        <hr>
+        <section>
+          <div>
+            <img class="img" src="assets/img/sect.jpg" alt="Senai Industria" width="100%">
+          </div>  
+        </section>
+        <!--Section4 Fim-->
+        <hr>
+        <!--Section5 Inicio-->
+        <section class="sect4 pb-5">
+          <div >
+            <h1 class="d-flex justify-content-center py-4 fw-bold">Cursos</h1>
+          </div>
+          <div class=" text-center">
+            <div class="row" id="m">
+              <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                <div class="card brd" style="width: 18rem;">
+                <img src="assets/img/cu1.jpg" class="card-img-top brd" alt="Curso1">
+                <div class="card-body">
+                  <h5 class="card-title">Exel</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-medium text-success">Preço: 3x de R$ 30.00</li>
+                  </ul>
+                  <p>Tempo de duração: 42h</p>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-2">  
+                <div class="card brd" style="width: 18rem;">
+                  <img src="assets/img/cu2.jpg" class="card-img-top brd" alt="Curso2" height="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Modelagem</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-medium text-success">Preço: 4x R$ 45.00</li>
+                    </ul>
+                    <p>Tempo de duração: 180h</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-2">  
+                <div class="card brd" style="width: 18rem;">
+                  <img src="assets/img/cu3.jpg" class="card-img-top brd" alt="Curso3" height="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Administração</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-medium text-success">Preço: 2x de R$ 20.00</li>
+                    </ul>
+                    <p>Tempo de duração: 24h</p>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-2">  
+                <div class="card brd" style="width: 18rem;">
+                  <img src="assets/img/cu4.png" class="card-img-top brd" alt="Curso4" height="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Exel Nivel Superior</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-medium text-success">Preço 3x de R$ 59.99</li>
+                    </ul>
+                    <p>Tempo de duração: 90h</p>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                <div class="card brd" style="width: 18rem;">
+                  <img src="assets/img/cu5.png" class="card-img-top brd" alt="Curso5" height="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Cronometragem</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-medium text-success">Preço: 2x de R$ 15.99</li>
+                    </ul>
+                    <p>Tempo de duração: 24h</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-2">  
+                <div class="card brd" style="width: 18rem;">
+                  <img src="assets/img/cu6.png" class="card-img-top brd" alt="Curso6" height="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">Liderança</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-medium text-success">Preço: 2x de 24.99</li>
+                    </ul>
+                    <p>Tempo de duração: 60h</p>
+                  </div>
+                </div>
+              </div>        
+            </div>      
+          </div>        
+        </section>
+        <!--Section5 Fim-->
+        <!--Section6 Inicio-->
+        <hr>
+        <section>
+          <div class="conteiner text-center mx-5 py-5">
+            <div class="row ">
+                <div class="col-xl-7 col-md-8 col-sm-12 d-flex justify-content-center py-3 px-5">
+                  <img src="assets/img/logo2.jpg" alt="Logo 2 Senai" width="100%">
+                </div>
+                <div class="col-xl-5 col-md-4 col-sm-12 d-flex ju py-3 gap-2" style="flex-direction: column;">  
+                  <div class="d-flex align-items-center text-body-emphasis">
+                    <img class="bi me-2" src="assets/img/fone.png" width="50" height="50">
+                    <span class="fs-3 fw-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; color: #004AAD;">Whatzapp</font></font></span>
+                  </div>
+                  <div class="d-flex justify-content-center px-5">
+                    <p style="color: #085ca0;">(32) 99999-9999</p>
+                  </div>  
+                  <div class="d-flex align-items-center text-body-emphasis">
+                    <img class="bi me-2" src="assets/img/insta.png" width="50" height="50">
+                    <span class="fs-3 fw-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; color: #004AAD;">Instagram</font></font></span>
+                  </div>
+                  <div class="d-flex justify-content-center px-5">
+                      <p style="color: #065da5;">@senaimgsjn</p>
+                  </div>    
+                </div>
+              </div>  
+            </div>      
+          </div>
+        </section>
+        <!--Section6 Fim-->
+        <hr>
+        <!--Section7 Inicio-->
+        <section class="sect7">
+          <div class="conteiner text-center mx-5">
+            <div class="d-flex align-items-center text-body-emphasis px-5 py-5">
+              <img class="bi me-2 mx-2" alt="Lampada" src="assets/img/perguntas.png" width="50" height="50">
+              <span class="fs-1 fw-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; color: #fff">Dúvidas Frequentes</font></font></span>
+            </div>
+          </div>  
+          <div class="accordion px-5" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button sc sb fs-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  # Os cursos entregam certificados?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  Todos os cursos entregam certificado de conclusão após a formação do aluno
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button sc sb fs-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  # Os cursos entregam certificados?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Todos os cursos entregam certificado de conclusão após a formação do aluno
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button sc sb fs-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  # Os cursos entregam certificados?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Todos os cursos entregam certificado de conclusão após a formação do aluno
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section7 Fim-->
+    </main>
+    <!--Main Fim-->
+    <!--Footer Inicio-->
+    <footer class="pt-5 py-2">
+      <p class="fs-5 fw-medium">Todos os Direitos Reservados</p>
+    </footer>
+    <!--Footer Fim-->
+</body>
+</html>
