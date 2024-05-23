@@ -202,7 +202,24 @@ Senaiiiii
                     <p>Tempo de duração: 60h</p>
                   </div>
                 </div>
-              </div>        
+              </div>   
+
+              {% for card in info %}
+              <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center py-2">
+                <div class="card brd" style="width: 18rem;">
+                  <img src="{{ card.path.url }}" class="card-img-top brd" alt="Curso5" height="100%">
+                  <div class="card-body">
+                    <h5 class="card-title">{{card.title}}</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-medium text-success">Preço 3x de R$  {{card.preco}}</li>
+                    </ul>
+                    <p>{{card.description}}</p>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}   
+
+
             </div>      
           </div>        
         </section>

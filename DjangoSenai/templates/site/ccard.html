@@ -1,0 +1,29 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+{% block title %}
+Cadastro Cards
+{% endblock %}
+{% block content %}
+
+    {% include 'partials/_header.html' %}
+    <!--Main Inicio-->
+    <main>
+       <div>
+            <h1>Cadastro dos Cards</h1>
+            <form action="{% url 'cadastro_cards' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for fields in form.visible_fields %}
+                <label>{{fields.label}}</label>
+                {{fields}}
+                {% endfor %}
+                <button class="btn btn-success" type="submit" >Cadastro</button>
+            </form>
+       </div>
+    </main>
+    <!--Main Fim-->
+    <!--Footer Inicio-->
+    {% include 'partials/_footer.html' %}
+    <!--Footer Fim-->
+
+
+{% endblock %}
